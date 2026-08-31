@@ -1,0 +1,107 @@
+:root {
+    --font-sans: "Inter", sans-serif;
+    --font-logo: "The Nautigal", cursive;
+
+    --background: #F3F0E9;
+    --background-alt: #EAE6DE;
+
+    --text: #171715;
+    --text-muted: #77736B;
+
+    --border: #D6D1C8;
+
+    --accent: #681F2A;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-sans);
+}
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.brand {
+    color: var(--accent);
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 0.8;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    min-height: calc(100vh - 70px);
+    padding: 2rem 1rem 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-meta,
+.hero-footer {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero-meta p,
+.hero-footer p {
+    margin: 0;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    
+    
+}
+
+.hero-title {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: clamp(6rem, 18vw, 18rem);
+    font-weight: 600;
+    letter-spacing: -0.07em;
+    line-height: 0.;
+    text-align: left;
+    font-size: 8rem;
+    
+}
