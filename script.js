@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const revealItems = document.querySelectorAll('.reveal');
     
     if (!revealItems.length || !('IntersectionObserver' in window)) {
