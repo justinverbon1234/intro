@@ -1,113 +1,3 @@
-:root {
-    --font-sans: "Inter", sans-serif;
-    --font-logo: "The Nautigal", cursive;
-    --background: #F3F0E9;
-    --background-alt: #EAE6DE;
-    --text: #171715;
-    --text-muted: #77736B;
-    --border: #D6D1C8;
-    --accent: #681F2A;
-
-    --transition-default: 300ms ease;
-    --transition-slow: 700ms ease;
-    --radius-default: 0.75rem;
-    --radius-full: 999px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    background-color: var(--background);
-    color: var(--text);
-    font-family: var(--font-sans);
-}
-
-section {
-    scroll-margin-top: 5rem;
-}
-
-/* Animations */
-.reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity var(--transition-slow), transform var(--transition-slow);
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Navbar */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--border);
-    background: var(--background);
-}
-
-.brand {
-    font-family: var(--font-logo);
-    font-size: 2.4rem;
-    color: var(--text);
-    line-height: 1;
-    letter-spacing: -0.06em;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    position: relative;
-    color: var(--text-muted);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.7rem;
-    font-weight: 500;
-    transition: color var(--transition-default), transform var(--transition-default);
-}
-
-.nav-links a:hover {
-    color: var(--text);
-    transform: translateY(-1px);
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.4rem;
-    width: 100%;
-    height: 1px;
-    background: var(--text);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform var(--transition-default);
-}
-
-.nav-links a:hover::after {
-    transform: scaleX(1);
-}
-
-/* Hero Section */
 .hero {
     min-height: calc(100vh - 70px);
     padding: 2rem 1rem 1rem;
@@ -189,34 +79,6 @@ section {
     justify-content: space-between;
 }
 
-.section-header {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.section-header h2 {
-    margin: 0;
-    font-family: var(--font-logo);
-    font-size: clamp(3rem, 10vw, 8rem);
-    font-weight: 600;
-    letter-spacing: -0.07em;
-}
-
-.section-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: auto;
-}
-
-.section-footer p {
-    margin: 0;
-}
-
-/* Justin Section */
 .justin-layout {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -235,14 +97,6 @@ section {
 
 .justin-intro {
     max-width: 560px;
-}
-
-.eyebrow {
-    margin: 0 0 1rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--text-muted);
 }
 
 .justin-quote {
@@ -312,7 +166,6 @@ section {
     box-shadow: 0 24px 50px rgba(23, 23, 21, 0.12);
 }
 
-/* Journal Section */
 .journal-intro {
     width: min(1100px, 100%);
     margin: 0 auto 1.5rem;
@@ -387,7 +240,6 @@ section {
     color: var(--text-muted);
 }
 
-/* Contact Section */
 .contact-content {
     width: min(800px, 100%);
     margin: 0 auto;
@@ -409,39 +261,6 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-}
-
-.contact-item h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text);
-}
-
-.contact-item a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
-    transition: text-decoration var(--transition-default);
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-.contact-item p {
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--text-muted);
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
