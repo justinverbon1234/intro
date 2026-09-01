@@ -3,85 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The portfolio and visual journal of Justin Verbon — digital designer working across art, fashion and technology.">
-    <meta name="theme-color" content="#f3f0e9">
-    <title>Justin Verbon — Digital Designer</title>
+
+    <title>Website</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" type="module"></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-        <a class="brand" href="#home" aria-label="Justin Verbon, home">JV</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
-        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-            <a href="#work">Work</a><a href="#about">Justin</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
-        </nav>
-        <p class="availability"><span></span> Available for selected projects</p>
-    </header>
+    <nav class="navbar">
+        <div class="brand">JV</div>
 
-    <main id="main">
-        <section class="hero" id="home" aria-labelledby="hero-title">
-            <div class="section-meta hero-meta"><p>Digital designer</p><p>Utrecht · Amsterdam</p></div>
-            <div class="hero-stage">
-                <p class="hero-intro reveal">Building visual identities and digital experiences at the intersection of culture and technology.</p>
-                <h1 id="hero-title" aria-label="Justin Verbon"><span>Justin</span><span>Verbon</span></h1>
-                <figure class="hero-portrait reveal"><img src="images/IMG_3218.jpeg" alt="Portrait of Justin Verbon" width="2456" height="3840"></figure>
-            </div>
-            <div class="hero-bottom"><p>Art / Fashion / Tech</p><a href="#work">Scroll to explore <span aria-hidden="true">↓</span></a><p>Portfolio · 2026</p></div>
-        </section>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#justin">Justin</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section class="work section" id="work" aria-labelledby="work-title">
-            <div class="section-heading reveal">
-                <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Experiments in<br><em>image &amp; interface.</em></h2></div>
-                <p class="section-copy">A growing collection of self-initiated work exploring identity, atmosphere, and the space between physical and digital culture.</p>
+    <main>
+        <section class="hero reveal" id="home">
+            <div class="hero-meta">
+                <p>Digital Design</p>
+                <p>Amsterdam, 2026</p>
             </div>
-            <div class="projects">
-                <article class="project project-featured reveal">
-                    <figure class="project-image portrait-one"><img src="images/IMG_3260.jpeg" alt="Close portrait from the Quiet Studies series" width="3073" height="3840" loading="lazy"><span class="project-index">01</span></figure>
-                    <div class="project-info"><div><p class="project-type">Art direction · Photography</p><h3>Quiet Studies</h3></div><p>A portrait experiment about restraint, anonymity, and the tension between being seen and staying hidden.</p></div>
-                </article>
-                <article class="project project-secondary reveal">
-                    <figure class="project-image portrait-two"><img src="images/IMG_3218.jpeg" alt="Portrait detail from the Quiet Studies series" width="2456" height="3840" loading="lazy"><span class="project-index">02</span></figure>
-                    <div class="project-info"><div><p class="project-type">Editorial · Visual research</p><h3>Between Frames</h3></div><p>A study in framing and gesture, turning a familiar portrait into a graphic, editorial composition.</p></div>
-                </article>
-                <article class="project project-digital reveal">
-                    <div class="interface-study" aria-label="Abstract interface composition"><div class="interface-top"><span>JV / 03</span><span>12:48</span></div><p>Culture,<br>translated<br>into <em>form.</em></p><div class="interface-bottom"><span>Digital study</span><span>↗</span></div></div>
-                    <div class="project-info"><div><p class="project-type">Digital design · Concept</p><h3>Index / 001</h3></div><p>An ongoing interface archive where typography, motion, and cultural references become new digital forms.</p></div>
-                </article>
+
+            <div class="hero-header">
+                <h1 class="hero-title">
+                    <span>JUSTIN</span>
+                    <span class="hero-lastname">VERBON</span>
+                </h1>
+            </div>
+
+            <div class="hero-footer">
+                <p>Art / Fashion / Tech</p>
+                <p>Vol. 01</p>
             </div>
         </section>
+    </main>
 
-        <section class="about section" id="about" aria-labelledby="about-title">
-            <div class="about-mark reveal" aria-hidden="true">JV</div>
-            <div class="about-grid">
-                <p class="eyebrow">02 / About</p>
-                <div class="about-copy reveal">
-                    <h2 id="about-title">Curious by nature.<br><em>Precise by design.</em></h2>
-                    <p>I’m Justin, a 25-year-old digital design student based in Utrecht. My practice moves between art, fashion, and technology — looking for ideas that feel culturally aware, visually direct, and a little unexpected.</p>
-                    <p>I use this space as both a portfolio and an open studio: a record of finished work, things in progress, and ideas worth keeping.</p>
-                    <a class="text-link" href="mailto:verbon47@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+    <main>
+        <section class="justin reveal" id="justin">
+            <div class="justin-header">
+                <h2>JV</h2>
+            </div>
+
+            <div class="justin-layout">
+                <div class="justin-content">
+                    <div class="justin-intro">
+                        <p class="eyebrow">About Me</p>
+                        <p class="justin-quote">
+                            I am a 25-year-old designer from Utrecht, exploring the intersection of art,
+                            fashion, and technology.
+                        </p>
+                        <p>
+                            My work is shaped by curiosity, creativity, and the desire to build things that
+                            feel expressive, thoughtful, and alive. I am constantly learning, making, and
+                            experimenting with the ways design can move through culture and technology.
+                        </p>
+
+                        <div class="justin-meta">
+                            <span>Designer</span>
+                            <span>Utrecht</span>
+                            <span>Art / Fashion / Tech</span>
+                        </div>
+                    </div>
                 </div>
-                <dl class="about-details reveal"><div><dt>Based</dt><dd>Utrecht, NL</dd></div><div><dt>Studying</dt><dd>FDND</dd></div><div><dt>Focus</dt><dd>Digital design<br>Art direction<br>Creative technology</dd></div></dl>
+
+                <div class="justin-visual">
+                    <img
+                        src="/images/IMG_3218.jpeg"
+                        alt="Portrait of Justin"
+                    >
+                </div>
+            </div>
+
+            <div class="justin-footer">
+                <p>About Me</p>
+                <p>Vol. 02</p>
             </div>
         </section>
 
-        <section class="journal section" id="journal" aria-labelledby="journal-title">
-            <div class="section-heading reveal"><div><p class="eyebrow">03 / Journal</p><h2 id="journal-title">Notes from<br><em>the process.</em></h2></div><p class="section-copy">Short observations on what I’m looking at, learning, and making.</p></div>
-            <div class="journal-list">
-                <article class="journal-entry reveal"><p class="entry-number">001</p><div><p class="entry-date">01 Sep 2026 · 2 min</p><h3>Why restraint makes an image louder</h3></div><p>On using less to create more tension, and why the parts we withhold can carry the most weight.</p><span aria-hidden="true">↗</span></article>
-                <article class="journal-entry reveal"><p class="entry-number">002</p><div><p class="entry-date">28 Aug 2026 · 3 min</p><h3>A website can be a living sketchbook</h3></div><p>Moving away from the perfect portfolio and toward a space that leaves room for unfinished thinking.</p><span aria-hidden="true">↗</span></article>
-                <article class="journal-entry reveal"><p class="entry-number">003</p><div><p class="entry-date">25 Aug 2026 · 2 min</p><h3>Where culture meets the interface</h3></div><p>A note on designing digital work that carries references, attitude, and a point of view.</p><span aria-hidden="true">↗</span></article>
+        <section class="journal reveal" id="journal">
+            <div class="journal-header">
+                <h2>Journal</h2>
+            </div>
+
+            <div class="journal-intro">
+                <p>Notes from the studio</p>
+            </div>
+
+            <div class="journal-layout">
+                <article class="journal-entry featured">
+                    <p class="entry-type">Essay</p>
+                    <h3>My First Post</h3>
+                    <p class="entry-date">September 1, 2026</p>
+                    <p>Welcome to my journal! Here I'll share thoughts about design, fashion, and technology. Stay tuned for updates and reflections on my creative journey.</p>
+                </article>
+
+                <article class="journal-entry">
+                    <p class="entry-type">Inspiration</p>
+                    <h3>Design Inspiration</h3>
+                    <p class="entry-date">August 28, 2026</p>
+                    <p>Today I was inspired by minimalist design principles. Clean lines, purposeful whitespace, and thoughtful typography can communicate so much.</p>
+                </article>
+
+                <article class="journal-entry">
+                    <p class="entry-type">Reflection</p>
+                    <h3>Tech & Creativity</h3>
+                    <p class="entry-date">August 25, 2026</p>
+                    <p>The intersection of technology and creativity is fascinating. Digital tools are enabling new forms of artistic expression and design innovation.</p>
+                </article>
+            </div>
+
+            <div class="journal-footer">
+                <p>Thoughts & Updates</p>
+                <p>Vol. 03</p>
             </div>
         </section>
 
-        <section class="contact" id="contact" aria-labelledby="contact-title">
-            <div class="contact-top"><p class="eyebrow">04 / Contact</p><p>Have an idea, collaboration, or<br>interesting conversation in mind?</p></div>
-            <div class="contact-main reveal"><h2 id="contact-title">Let’s make<br><em>something good.</em></h2><a href="mailto:verbon47@gmail.com" aria-label="Email Justin Verbon">↗</a></div>
-            <footer class="site-footer"><p>© 2026 Justin Verbon</p><a href="mailto:verbon47@gmail.com">verbon47@gmail.com</a><a href="#home">Back to top ↑</a></footer>
+        <section class="contact reveal" id="contact">
+            <div class="contact-header">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="contact-content">
+                <p>I'd love to hear from you! Feel free to reach out for collaborations, inquiries, or just to say hello.</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <a href="mailto:verbon47@gmail.com">verbon47@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Utrecht, Netherlands</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <a href="#">Instagram</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-footer">
+                <p>Get In Touch</p>
+
+            </div>
         </section>
     </main>
 </body>
