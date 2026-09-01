@@ -163,17 +163,19 @@ section {
     font-size: clamp(6rem, 18vw, 18rem);
     font-weight: 600;
     letter-spacing: -0.07em;
-    line-height: 0.8;
+    line-height: 0.75;
     text-align: left;
 }
 
 .hero-lastname {
-    font-size: clamp(2.6rem, 7vw, 7rem);
+    font-size: clamp(6rem, 16vw, 14rem);
     font-weight: 700;
-    letter-spacing: -0.06em;
-    line-height: 0.8;
-    margin-top: 0.15em;
-    text-align: center;
+    letter-spacing: -0.07em;
+    line-height: 0.75;
+    margin-left: clamp(3rem, 12vw, 8rem);
+    text-align: left;
+}
+    text-align: left;
 }
 
 .justin {
