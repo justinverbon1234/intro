@@ -322,3 +322,20 @@ body {
     gap: 1rem;
     flex-wrap: wrap;
 }
+
+.justin-footer,
+.journal-footer,
+.contact-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: auto;
+}
+
+.justin-footer p,
+.journal-footer p,
+.contact-footer p {
+    margin: 0;
+}
