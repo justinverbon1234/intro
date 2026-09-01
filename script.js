@@ -1,12 +1,6 @@
-/**
- * Scroll reveal animation using Intersection Observer
- * Progressively enhances page experience as sections enter viewport
- */
-
-document.addEventListener('DOMContentLoaded', () => {
+ocument.addEventListener('DOMContentLoaded', () => {
     const revealItems = document.querySelectorAll('.reveal');
     
-    // Skip if no items to reveal or if IntersectionObserver not supported
     if (!revealItems.length || !('IntersectionObserver' in window)) {
         return;
     }
